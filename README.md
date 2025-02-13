@@ -3,8 +3,6 @@
 
 Machine Learning Model for Vehicle Collision Analysis
 
----
-
 ## Overview
 Machine Learning (ML) is transforming industries by analyzing complex datasets and generating accurate predictions. This project presents a **Gradient Boosting Regression model using XGBoost** to predict the severity of **vehicle collisions** based on various environmental and vehicle-specific factors.
 
@@ -16,8 +14,6 @@ Our model helps assess accident severity by analyzing:
 
 The project demonstrates advanced **data processing, model training, and hyperparameter tuning** techniques, making it a strong addition to any data science portfolio.
 
----
-
 ## Key Results
 The model performed well for **injury predictions** but had limitations in **fatality predictions**, as shown below:
 
@@ -28,29 +24,21 @@ The model performed well for **injury predictions** but had limitations in **fat
 
 **Conclusion:** The model can predict injuries with reasonable accuracy, but fatalities are difficult to model due to class imbalance.
 
----
-
 ## Tech Stack & Tools
 **Machine Learning:** XGBoost, Scikit-Learn  
 **Data Processing:** Pandas, NumPy  
 **Visualization:** Matplotlib, Seaborn  
 **Development:** Python, Google Colab  
 
----
-
 ## Dataset
 - **Source:** [Canadian Open Government - National Collision Database](https://tc.canada.ca/en/road-transportation/statistics-data/canadian-motor-vehicle-traffic-collision-statistics-2022)
 - **Years Used:** 2016-2019
 - **Size:** ~1 million cleaned data points
 
----
-
 ## Installation & Usage
 1. Download the ipynb file & open in Google colab
 2. Unzip data.zip and add data files to "sample data" in colab
 3. run the program
-
----
 
 ## Model Architecture
 The model follows a **Gradient Boosting approach** using XGBoost, where multiple weak decision tree models are combined to enhance prediction accuracy.
@@ -65,13 +53,9 @@ The model follows a **Gradient Boosting approach** using XGBoost, where multiple
 - A single multi-output model resulted in poor performance.
 - Two separate models provided better results.
 
----
-
 ## Evaluation Metrics
 - **Root Mean Squared Error (RMSE):** Measures error magnitude (lower is better).
 - **R² Score:** Represents the proportion of variance explained (higher is better).
-
----
 
 ## Lessons Learned & Challenges
 **Data Imbalance:** Fatalities were rare compared to injuries, making predictions harder.  
@@ -79,14 +63,10 @@ The model follows a **Gradient Boosting approach** using XGBoost, where multiple
 **Feature Engineering:** Dropping irrelevant features (e.g., passenger age) improved efficiency.  
 **Boosting Algorithms:** Experimented with `gbtree`, `gblinear`, and `dart`—`gbtree` performed best.  
 
----
-
 ## Contributors
 **Dominic Bongiorno** - Data Processing & Modeling  
 **Maddy Paulson** - Model Optimization & Hyperparameter Tuning  
 **Jake Rubin** - Data Cleaning & Feature Engineering  
-
----
 
 ## References
 1. Transport Canada, [Collision Statistics 2022](https://tc.canada.ca/en/road-transportation/statistics-data/canadian-motor-vehicle-traffic-collision-statistics-2022)  
